@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Form Page</title>
+  <meta name="description" content="A demo page showcasing lists, tables, media, and a fully structured HTML5 form with validation.">
+</head>
+<body>
+ 
+  <header>
+    <h1>Welcome to the Enhanced HTML5 Demo Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and accessible HTML5 forms with validation.</p>
+  </header>
+
+ 
+  <section>
+    <h2>Favorite Web Technologies</h2>
+    <p>Here is an example of an ordered and unordered list:</p>
+
+    <h3>Unordered List</h3>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+      <li>Plan your webpage</li>
+      <li>Write semantic HTML5</li>
+      <li>Apply accessibility practices</li>
+      <li>Optimize for SEO</li>
+    </ol>
+  </section>
+
+  
+  <section>
+    <h2>Sample Timetable</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+      <caption>Weekly Schedule</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th></th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>dancing
+          </td>
+          <td>9:00 AM - 11:00 AM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Accessibility Review</td>
+          <td>2:00 PM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Form Validation Testing</td>
+          <td>10:00 AM - 12:00 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Placeholder Image">
+      <figcaption>A sample image embedded with semantic HTML5.</figcaption>
+    </figure>
+
+    <h3>Audio Example</h3>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video Example</h3>
+    <video width="400" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="coding" name="hobby" value="coding">
+        <label for="coding">Coding</label><br>
+
+        <input type="checkbox" id="music" name="hobby" value="music">
+        <label for="music">Music</label><br><br>
+
+        <label>Subscribe to Newsletter:</label>
+        <input type="radio" id="yes" name="subscribe" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="subscribe" value="no">
+        <label for="no">No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us something about yourself..."></textarea><br><br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <br>
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p></p>
+  </footer>
+</body>
+</html>
